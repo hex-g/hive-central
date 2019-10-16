@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Hive Central</string>
+    <string name="mainActivity_textView_usernameLabel">TextView</string>
+    <string name="mainActivity_textView_passwordLabel">TextView</string>
+    <string name="mainActivity_button_submit">Button</string>
+    <string name="mainActivity_toast_wrongCredentials">Error</string>
+
+    <string name="home_textView_welcomeText">Welcome %s</string>
 </resources>
