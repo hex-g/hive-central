@@ -15,19 +15,20 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        usernameField = findViewById<EditText>(R.id.mainActivity_editText_usernameField)
-        passwordField = findViewById<EditText>(R.id.mainActivity_editText_passwordField)
+        usernameField = findViewById(R.id.mainActivity_editText_usernameField)
+        passwordField = findViewById(R.id.mainActivity_editText_passwordField)
     }
 
     fun submit(view: View) {
         val username = usernameField.text.toString()
         val password = passwordField.text.toString()
 
+        passwordField.text.clear()
         if (authenticate(username, password)) {
+            usernameField.text.clear()
             (application as Application).currentUser = username
             startActivity(Intent(this, Home::class.java))
         } else {
-            passwordField.text.clear()
             Toast.makeText(this, R.string.mainActivity_toast_wrongCredentials, Toast.LENGTH_SHORT)
                 .show()
         }

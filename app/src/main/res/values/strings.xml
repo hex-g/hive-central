@@ -1,9 +1,11 @@
 <resources>
     <string name="app_name">Hive Central</string>
-    <string name="mainActivity_textView_usernameLabel">TextView</string>
-    <string name="mainActivity_textView_passwordLabel">TextView</string>
-    <string name="mainActivity_button_submit">Button</string>
-    <string name="mainActivity_toast_wrongCredentials">Error</string>
+    <string name="mainActivity_textView_usernameLabel">Usuário</string>
+    <string name="mainActivity_textView_passwordLabel">Senha</string>
+    <string name="mainActivity_button_submit">Entrar</string>
+    <string name="mainActivity_toast_wrongCredentials">Usuário ou senha incorretos</string>
 
-    <string name="home_textView_welcomeText">Welcome %s</string>
+    <string name="home_textView_welcomeText">Bem-vindo, %s!</string>
+    <string name="home_button_logout">Sair</string>
+    <string name="home_toast_backpressed">Pressione novamente para sair</string>
 </resources>
