@@ -4,41 +4,54 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+
+    style="@style/yellowBackground"
+    >
+
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
         android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
             android:id="@+id/mainActivity_textView_usernameLabel"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:labelFor="@id/mainActivity_editText_usernameField"
             android:text="@string/mainActivity_textView_usernameLabel" />
+
 
         <EditText
             android:id="@+id/mainActivity_editText_usernameField"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
             android:ems="10"
             android:importantForAutofill="no"
             android:inputType="textPersonName" />
-
+        
         <TextView
             android:id="@+id/mainActivity_textView_passwordLabel"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:labelFor="@id/mainActivity_editText_passwordField"
             android:text="@string/mainActivity_textView_passwordLabel" />
+
+
 
         <EditText
             android:id="@+id/mainActivity_editText_passwordField"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
             android:ems="10"
             android:importantForAutofill="no"
             android:inputType="textPassword" />
@@ -47,7 +60,7 @@
             android:id="@+id/mainActivity_button_submit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/mainActivity_button_submit"
-            android:onClick="submit"/>
+            android:onClick="submit"
+            android:text="@string/mainActivity_button_submit" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
