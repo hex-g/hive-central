@@ -6,11 +6,6 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
-import com.android.volley.Request
-import com.android.volley.Response
-import com.android.volley.toolbox.StringRequest
-import com.android.volley.toolbox.Volley
-import org.json.JSONObject
 
 class Home : AppCompatActivity() {
     var lastTime = 0L
@@ -24,22 +19,17 @@ class Home : AppCompatActivity() {
             startActivity(Intent(this, MainActivity::class.java))
         }
 
-        val baseUrl = (application as Application).API_URL
-        val urls = ArrayList<String>()
-
-        // build urls
-        urls.add("/note")
-        urls.add("/note2")
-        urls.add("/note3")
-        urls.add("/note4")
-
         val notes = ArrayList<NotesAdapter.Note>()
 
-        val queue = Volley.newRequestQueue(this)
-        urls.forEach { path -> {}}
+        for(id in 0..4){
+            val task = ReadNoteTask()
+            val note: NotesAdapter.Note? = task.execute(id).get()
+            if (note != null) {
+                notes.add(note)
+            }
+        }
 
-        val stringRequest = StringRequest(baseUrl + "/note", Response.Listener<String> { response -> notes.add(NotesAdapter.Note) })
-
+        val baseUrl = (application as Application).API_URL
         adapter = NotesAdapter(this, notes)
         findViewById<RecyclerView>(R.id.home_recyclerView_notes).adapter = adapter
     }
