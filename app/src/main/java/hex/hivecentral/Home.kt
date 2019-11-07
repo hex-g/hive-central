@@ -5,7 +5,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
+import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import kotlinx.android.synthetic.main.activity_home.*
 
 class Home : AppCompatActivity() {
     var lastTime = 0L
@@ -21,17 +23,19 @@ class Home : AppCompatActivity() {
 
         val notes = ArrayList<NotesAdapter.Note>()
 
-        for(id in 0..4){
+        for(id in 0..0){
             val task = ReadNoteTask()
-            val note: NotesAdapter.Note? = task.execute(id).get()
+            val note: NotesAdapter.Note? = task.execute().get()
             if (note != null) {
                 notes.add(note)
             }
         }
 
-        val baseUrl = (application as Application).API_URL
         adapter = NotesAdapter(this, notes)
-        findViewById<RecyclerView>(R.id.home_recyclerView_notes).adapter = adapter
+        home_recyclerView_notes.adapter = adapter
+        val linearLayoutManager = LinearLayoutManager(this)
+        home_recyclerView_notes.layoutManager = linearLayoutManager
+
     }
 
     override fun onBackPressed() {

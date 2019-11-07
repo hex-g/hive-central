@@ -11,11 +11,12 @@ class ReadNoteTask : AsyncTask<Int, Void, NotesAdapter.Note>() {
             .decoder(GsonDecoder())
             .target(
                 RequestKirby::class.java,
-                "tem que colocar uma URL aqui hirumitsu"
+                "https://api.myjson.com/bins/"
             )
 
+
         return try {
-            request.getNote(params[0]!!)
+            request.getNote()
         } catch (e: Exception) {
             null
         }

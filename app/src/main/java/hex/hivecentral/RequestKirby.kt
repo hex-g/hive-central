@@ -5,6 +5,6 @@ package hex.hivecentral
 
     interface RequestKirby {
 
-        @RequestLine("GET /note/{id}")
-        fun getNote(@Param("id") id: Int): NotesAdapter.Note?
+        @RequestLine("GET /zxz9w")
+        fun getNote(): NotesAdapter.Note?
     }
