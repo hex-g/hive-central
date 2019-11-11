@@ -1,9 +1,10 @@
 <resources>
     <string name="app_name">Hive Central</string>
-    <string name="mainActivity_textView_usernameLabel">Usuário</string>
+    <string name="mainActivity_textView_usernameLabel">Login</string>
     <string name="mainActivity_textView_passwordLabel">Senha</string>
     <string name="mainActivity_button_submit">Entrar</string>
     <string name="mainActivity_toast_wrongCredentials">Usuário ou senha incorretos</string>
+    <string name="mainActivity_toast_loginSubtitle">conhecimento compartilhado por todos para todos</string>
 
     <string name="home_textView_welcomeText">Bem-vindo, %s!</string>
     <string name="home_button_logout">Sair</string>

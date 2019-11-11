@@ -2,65 +2,95 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    style="@style/yellowBackground"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
 
-    style="@style/yellowBackground"
-    >
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="false"
+    tools:context=".MainActivity">
 
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toTopOf="@+id/paragraph"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/ic_hive_central"/>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:minHeight="440dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo"
+        app:srcCompat="@drawable/ic_lineback" />
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/logo"
+        app:layout_constraintBottom_toTopOf="@id/linearLayout"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textColor="@color/black"
+        android:text="@string/mainActivity_toast_loginSubtitle"
+        android:textAlignment="center"
+        android:lineHeight="24sp"
+        android:textSize="18sp"
+        android:id="@+id/paragraph"
+        />
 
     <LinearLayout
-        android:layout_width="0dp"
+        android:id="@+id/linearLayout"
+        android:layout_width="280dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginEnd="24dp"
         android:orientation="vertical"
+        android:gravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <TextView
-            android:id="@+id/mainActivity_textView_usernameLabel"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:labelFor="@id/mainActivity_editText_usernameField"
-            android:text="@string/mainActivity_textView_usernameLabel" />
+        app:layout_constraintTop_toBottomOf="@+id/paragraph">
 
 
         <EditText
             android:id="@+id/mainActivity_editText_usernameField"
+            style="@style/loginInput"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="50dp"
+            android:layout_marginBottom="16dp"
             android:ems="10"
+            android:hint="@string/mainActivity_textView_usernameLabel"
             android:importantForAutofill="no"
             android:inputType="textPersonName" />
-        
-        <TextView
-            android:id="@+id/mainActivity_textView_passwordLabel"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:labelFor="@id/mainActivity_editText_passwordField"
-            android:text="@string/mainActivity_textView_passwordLabel" />
-
 
 
         <EditText
             android:id="@+id/mainActivity_editText_passwordField"
+            style="@style/loginInput"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="50dp"
             android:ems="10"
+            android:hint="@string/mainActivity_textView_passwordLabel"
             android:importantForAutofill="no"
             android:inputType="textPassword" />
 
         <Button
             android:id="@+id/mainActivity_button_submit"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            style="@style/loginButton"
             android:onClick="submit"
-            android:text="@string/mainActivity_button_submit" />
+            android:text="@string/mainActivity_button_submit"
+            />
     </LinearLayout>
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

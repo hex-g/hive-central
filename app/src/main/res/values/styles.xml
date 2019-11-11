@@ -9,7 +9,19 @@
     </style>
 
     <style name="yellowBackground">
-        <item name="android:background">#FFEE54</item>
+        <item name="android:background">@color/yellow</item>
     </style>
 
+    <style name="loginInput">
+        <item name="android:background">@color/white</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:radius">8dp</item>
+    </style>
+
+    <style name="loginButton">
+        <item name="android:background">@color/black</item>
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
 </resources>
