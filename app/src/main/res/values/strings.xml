@@ -9,4 +9,6 @@
     <string name="home_textView_welcomeText">Bem-vindo, %s!</string>
     <string name="home_button_logout">Sair</string>
     <string name="home_toast_backpressed">Pressione novamente para sair</string>
+    <string name="asGuest">Acessar como <b>convidado</b></string>
+    <string name="forgotPass">esqueci minha senha</string>
 </resources>
