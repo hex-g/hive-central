@@ -35,6 +35,20 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun authenticate(username: String, password: String): Boolean {
-        return username == "user" && password == "1234"
+        val validUser = username == "user";
+        val validPassword = password == "1234"
+        setValidationIcons(validUser,validPassword)
+        return validUser && validPassword
+    }
+
+    fun setValidationIcons(isValidUser:Boolean, isValidPassword: Boolean){
+        usernameField.setCompoundDrawablesRelativeWithIntrinsicBounds(0,0,R.drawable.ic_red_exclamation_icon,0)
+        passwordField.setCompoundDrawablesRelativeWithIntrinsicBounds(0,0,R.drawable.ic_red_exclamation_icon,0)
+        if(isValidUser){
+            usernameField.setCompoundDrawablesRelativeWithIntrinsicBounds(0,0,R.drawable.ic_tick_inside_circle,0)
+            if(isValidPassword){
+                passwordField.setCompoundDrawablesRelativeWithIntrinsicBounds(0,0,R.drawable.ic_tick_inside_circle,0)
+            }
+        }
     }
 }
