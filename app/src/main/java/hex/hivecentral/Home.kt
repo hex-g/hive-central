@@ -53,4 +53,7 @@ class Home : AppCompatActivity() {
         (application as Application).currentUser = null
         finish()
     }
+    fun openArticle(view: View){
+        startActivity(Intent(this, OpenArticle::class.java))
+    }
 }
