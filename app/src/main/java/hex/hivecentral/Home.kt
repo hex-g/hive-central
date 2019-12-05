@@ -23,11 +23,25 @@ class Home : AppCompatActivity() {
 
         val notes = ArrayList<NotesAdapter.Note>()
 
+        //apagar essa linha
+        var mockedNote = NotesAdapter(this, notes).Note("Não há anotações", "Parece que nenhuma anotação foi feita até o momento, acesse a Hive-Nest e seja o primeiro a criar uma!!!")
+
+
         for(id in 0..0){
             val task = ReadNoteTask()
             val note: NotesAdapter.Note? = task.execute().get()
             if (note != null) {
                 notes.add(note)
+            }
+            //apagar esse else
+            else{
+                notes.add(mockedNote)
+                notes.add(mockedNote)
+                notes.add(mockedNote)
+                notes.add(mockedNote)
+                notes.add(mockedNote)
+                notes.add(mockedNote)
+                notes.add(mockedNote)
             }
         }
 
