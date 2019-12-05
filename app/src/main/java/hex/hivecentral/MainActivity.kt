@@ -44,11 +44,9 @@ class MainActivity : AppCompatActivity() {
     fun setValidationIcons(isValidUser:Boolean, isValidPassword: Boolean){
         usernameField.setCompoundDrawablesRelativeWithIntrinsicBounds(0,0,R.drawable.ic_red_exclamation_icon,0)
         passwordField.setCompoundDrawablesRelativeWithIntrinsicBounds(0,0,R.drawable.ic_red_exclamation_icon,0)
-        if(isValidUser){
+        if(isValidUser && isValidPassword){
             usernameField.setCompoundDrawablesRelativeWithIntrinsicBounds(0,0,R.drawable.ic_tick_inside_circle,0)
-            if(isValidPassword){
-                passwordField.setCompoundDrawablesRelativeWithIntrinsicBounds(0,0,R.drawable.ic_tick_inside_circle,0)
-            }
+            passwordField.setCompoundDrawablesRelativeWithIntrinsicBounds(0,0,R.drawable.ic_tick_inside_circle,0)
         }
     }
 }
