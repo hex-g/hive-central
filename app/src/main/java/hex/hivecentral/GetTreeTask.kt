@@ -5,17 +5,17 @@ import feign.Feign
 import feign.gson.GsonDecoder
 import java.lang.Exception
 
-class ReadNoteTask : AsyncTask<Int, Void, NotesAdapter.Note>() {
-    override fun doInBackground(vararg params: Int?): NotesAdapter.Note? {
+class GetTreeTask : AsyncTask<Void, Void, NoteNode>() {
+    override fun doInBackground(vararg params: Void?): NoteNode? {
         val request = Feign.builder()
             .decoder(GsonDecoder())
             .target(
                 RequestKirby::class.java,
-                "URL"
+                "http://35.153.196.161:8762/"
             )
 
         return try {
-            request.getNote()
+            request.getTree()
         } catch (e: Exception) {
             null
         }

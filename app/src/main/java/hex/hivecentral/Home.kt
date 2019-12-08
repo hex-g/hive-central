@@ -6,7 +6,6 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.activity_home.*
 
 class Home : AppCompatActivity() {
@@ -22,6 +21,7 @@ class Home : AppCompatActivity() {
         }
 
         val notes = ArrayList<NotesAdapter.Note>()
+        val root = GetTreeTask().execute().get()
 
         //apagar essa linha
         var mockedNote = NotesAdapter(this, notes).Note("Não há anotações", "Parece que nenhuma anotação foi feita até o momento, acesse a Hive-Nest e seja o primeiro a criar uma!!!")
