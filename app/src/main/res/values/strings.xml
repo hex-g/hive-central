@@ -4,13 +4,14 @@
     <string name="mainActivity_textView_passwordLabel">Senha</string>
     <string name="mainActivity_button_submit">Entrar</string>
     <string name="mainActivity_toast_wrongCredentials">Usuário ou senha incorretos</string>
-    <string name="mainActivity_toast_loginSubtitle">conhecimento compartilhado por todos para todos</string>
+    <string name="mainActivity_toast_loginSubtitle">Conhecimento compartilhado por todos para todos</string>
 
     <string name="home_textView_welcomeText">Bem-vindo, %s!</string>
     <string name="home_button_logout">Sair</string>
     <string name="home_toast_backpressed">Pressione novamente para sair</string>
     <string name="asGuest">Acessar como <b>convidado</b></string>
-    <string name="forgotPass">esqueci minha senha</string>
+    <string name="forgotPass">Esqueci minha senha</string>
+
     <string name="placeholderArticle">
         Hoje o JavaScript é muito mais que interações com HTML.
         Podemos fazer coisas incríveis além do frontend.

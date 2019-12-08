@@ -8,9 +8,9 @@
     <string name="mainActivity_textView_passwordLabel">Password</string>
     <string name="mainActivity_textView_usernameLabel">Username</string>
     <string name="mainActivity_toast_wrongCredentials">Wrong credentials</string>
-    <string name="mainActivity_toast_loginSubtitle">shared knowledge by all to all</string>
+    <string name="mainActivity_toast_loginSubtitle">Shared knowledge by all to all</string>
     <string name="asGuest">Access as a <b>guest</b></string>
-    <string name="forgotPass">forgot Password</string>
+    <string name="forgotPass">Forgot password</string>
     <string name="placeholderArticle">
         Hoje o JavaScript é muito mais que interações com HTML.
         Podemos fazer coisas incríveis além do frontend.
