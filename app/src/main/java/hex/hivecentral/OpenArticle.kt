@@ -24,6 +24,10 @@ class OpenArticle : AppCompatActivity() {
             }
         }
 
+        var readIn = content.length/200
+
+        tv_ReadIn.text = "Leia em "+readIn+" min"
+
         open_article_article.text = content
     }
 }
