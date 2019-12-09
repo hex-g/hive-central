@@ -24,9 +24,11 @@ class MainActivity : AppCompatActivity() {
         val password = passwordField.text.toString()
 
         passwordField.text.clear()
-        if (authenticate(username, password)) {
+        val token = authenticate(username, password)
+        if (token != null) {
             usernameField.text.clear()
             (application as Application).currentUser = username
+            (application as Application).token = token
             startActivity(Intent(this, Home::class.java))
         } else {
             Toast.makeText(this, R.string.mainActivity_toast_wrongCredentials, Toast.LENGTH_SHORT)
@@ -34,7 +36,19 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun authenticate(username: String, password: String): Boolean {
-        return username == "user" && password == "1234"
+    private fun authenticate(username: String, password: String): String? {
+        val token = LoginTask().execute(username, password).get()
+        val valid = token != null
+        setValidationIcons(valid, valid)
+        return token
+    }
+
+    fun setValidationIcons(isValidUser:Boolean, isValidPassword: Boolean){
+        usernameField.setCompoundDrawablesRelativeWithIntrinsicBounds(0,0,R.drawable.ic_red_exclamation_icon,0)
+        passwordField.setCompoundDrawablesRelativeWithIntrinsicBounds(0,0,R.drawable.ic_red_exclamation_icon,0)
+        if(isValidUser && isValidPassword){
+            usernameField.setCompoundDrawablesRelativeWithIntrinsicBounds(0,0,R.drawable.ic_tick_inside_circle,0)
+            passwordField.setCompoundDrawablesRelativeWithIntrinsicBounds(0,0,R.drawable.ic_tick_inside_circle,0)
+        }
     }
 }

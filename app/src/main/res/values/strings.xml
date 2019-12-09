@@ -4,9 +4,70 @@
     <string name="mainActivity_textView_passwordLabel">Senha</string>
     <string name="mainActivity_button_submit">Entrar</string>
     <string name="mainActivity_toast_wrongCredentials">Usuário ou senha incorretos</string>
-    <string name="mainActivity_toast_loginSubtitle">conhecimento compartilhado por todos para todos</string>
+    <string name="mainActivity_toast_loginSubtitle">Conhecimento compartilhado por todos para todos</string>
 
     <string name="home_textView_welcomeText">Bem-vindo, %s!</string>
     <string name="home_button_logout">Sair</string>
     <string name="home_toast_backpressed">Pressione novamente para sair</string>
+    <string name="asGuest">Acessar como <b>convidado</b></string>
+    <string name="forgotPass">Esqueci minha senha</string>
+
+    <string name="placeholderArticle">
+        Hoje o JavaScript é muito mais que interações com HTML.
+        Podemos fazer coisas incríveis além do frontend.
+        Nesse tutorial irei explicar como o Node.Js atende essa demanda!\n
+        <b>Configurando tudo</b>
+        Antes de mais nada, vamos precisar deixar o terreno preparado para nossa aplicação.
+        Primeiramente crie um diretório, navegue até ele e inicialize seu projeto com este código.\n
+        <b>Configurando tudo de novo</b>
+        Antes de mais nada, vamos precisar deixar o terreno preparado para nossa aplicação.
+        Primeiramente crie um diretório, navegue até ele e inicialize seu projeto com este código.\n
+        <b>Conclusão</b>
+        Então vimos que esse texto é apenas um teste de layout no final das contas, quem diria.
+        Muito obrigado por ter lido até aqui! Qualquer dúvida deixe nos comentários ou me procure nos corredores da faculdade.
+        Ficarei feliz em ajudar!aaaaaaaaaaaaa
+        \n\n\n
+        Hoje o JavaScript é muito mais que interações com HTML.
+        Podemos fazer coisas incríveis além do frontend.
+        Nesse tutorial irei explicar como o Node.Js atende essa demanda!\n
+        <b>Configurando tudo</b>
+        Antes de mais nada, vamos precisar deixar o terreno preparado para nossa aplicação.
+        Primeiramente crie um diretório, navegue até ele e inicialize seu projeto com este código.\n
+        <b>Configurando tudo de novo</b>
+        Antes de mais nada, vamos precisar deixar o terreno preparado para nossa aplicação.
+        Primeiramente crie um diretório, navegue até ele e inicialize seu projeto com este código.\n
+        <b>Conclusão</b>
+        Então vimos que esse texto é apenas um teste de layout no final das contas, quem diria.
+        Muito obrigado por ter lido até aqui! Qualquer dúvida deixe nos comentários ou me procure nos corredores da faculdade.
+        Ficarei feliz em ajudar!
+        \n\n\n
+        Hoje o JavaScript é muito mais que interações com HTML.
+        Podemos fazer coisas incríveis além do frontend.
+        Nesse tutorial irei explicar como o Node.Js atende essa demanda!\n
+        <b>Configurando tudo</b>
+        Antes de mais nada, vamos precisar deixar o terreno preparado para nossa aplicação.
+        Primeiramente crie um diretório, navegue até ele e inicialize seu projeto com este código.\n
+        <b>Configurando tudo de novo</b>
+        Antes de mais nada, vamos precisar deixar o terreno preparado para nossa aplicação.
+        Primeiramente crie um diretório, navegue até ele e inicialize seu projeto com este código.\n
+        <b>Conclusão</b>
+        Então vimos que esse texto é apenas um teste de layout no final das contas, quem diria.
+        Muito obrigado por ter lido até aqui! Qualquer dúvida deixe nos comentários ou me procure nos corredores da faculdade.
+        Ficarei feliz em ajudar!
+        \n\n\n
+        Hoje o JavaScript é muito mais que interações com HTML.
+        Podemos fazer coisas incríveis além do frontend.
+        Nesse tutorial irei explicar como o Node.Js atende essa demanda!\n
+        <b>Configurando tudo</b>
+        Antes de mais nada, vamos precisar deixar o terreno preparado para nossa aplicação.
+        Primeiramente crie um diretório, navegue até ele e inicialize seu projeto com este código.\n
+        <b>Configurando tudo de novo</b>
+        Antes de mais nada, vamos precisar deixar o terreno preparado para nossa aplicação.
+        Primeiramente crie um diretório, navegue até ele e inicialize seu projeto com este código.\n
+        <b>Conclusão</b>
+        Então vimos que esse texto é apenas um teste de layout no final das contas, quem diria.
+        Muito obrigado por ter lido até aqui! Qualquer dúvida deixe nos comentários ou me procure nos corredores da faculdade.
+        Ficarei feliz em ajudar!
+        \n\n\n
+    </string>
 </resources>

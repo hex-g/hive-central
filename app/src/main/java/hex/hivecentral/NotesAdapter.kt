@@ -34,5 +34,5 @@ class NotesAdapter(private val context: Context, private val notes: MutableList<
         }
     }
 
-    inner class Note(val title: String, val briefing: String) : Serializable
+    class Note(val title: String, val briefing: String) : Serializable
 }

@@ -4,11 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="16dp">
+    android:layout_margin="16dp"
+    >
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@drawable/note_card"
+        android:onClick="openArticle"
+        android:padding="16dp">
 
         <TextView
             android:id="@+id/itemNota_textView_title"
@@ -16,6 +20,7 @@
             android:layout_height="wrap_content"
             android:text="TextView"
             android:textSize="27sp"
+            android:textColor="@color/black"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -25,6 +30,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:text="TextView"
+            android:textColor="@color/black"
             android:textSize="18sp"
             app:layout_constraintStart_toStartOf="@id/itemNota_textView_title"
             app:layout_constraintTop_toBottomOf="@id/itemNota_textView_title"
